@@ -8,6 +8,9 @@ import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
 from DataCollector.DataCollector import DataCollector
 
+# Subject Init
+
+
 # Channel Init
 C3 = 14
 C4 = 16
