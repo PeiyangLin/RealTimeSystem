@@ -1,11 +1,7 @@
-import mne
 import numpy as np
 import torch
-import pylsl
 import time
 import threading
-import matplotlib.pyplot as plt
-from matplotlib.animation import FuncAnimation
 from DataCollector.DataCollector import DataCollector
 
 # Subject Init
