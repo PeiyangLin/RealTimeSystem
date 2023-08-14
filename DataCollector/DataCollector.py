@@ -4,13 +4,6 @@ import pylsl
 import time
 
 
-def normalize(data):
-    mean = np.mean(data)
-    std = np.std(data)
-    data = (data - mean) / std
-    return data
-
-
 class DataCollector:
     def __init__(self, C3=14, Eog=31, M2=18, fs=500, warmingTime=30):
         # Init the fixed parameters
@@ -26,9 +19,14 @@ class DataCollector:
 
         # create a new inlet to read from the stream
         self.inlet = pylsl.StreamInlet(streams[0])
-        self.chunk_C3 = []
-        self.chunk_Eog = []
-        self.chunk_M2 = []
+        # self.chunk_C3 = []
+        # self.chunk_Eog = []
+        # self.chunk_M2 = []
+
+        # 30 Min sti
+        self.chunk_C3 = list(np.zeros(30 * fs * 60))
+        self.chunk_Eog = list(np.zeros(30 * fs * 60))
+        self.chunk_M2 = list(np.zeros(30 * fs * 60))
 
         self.init_time = 0
 
@@ -58,28 +56,18 @@ class DataCollector:
             del self.chunk_Eog[0]
             del self.chunk_M2[0]
 
-    def Normalize(self):
-        Norm_C3 = np.array(self.chunk_C3)
-        Norm_EOG = np.array(self.chunk_Eog)
-        Norm_M2 = np.array(self.chunk_M2)
-
-        Norm_C3 = normalize(Norm_C3)
-        Norm_EOG = normalize(Norm_EOG)
-        Norm_M2 = normalize(Norm_M2)
-
-        return Norm_C3, Norm_EOG, Norm_M2
-
     def dataGet(self, NeedTime):
         ind = int(-NeedTime * self.fs)
-        Norm_C3, Norm_EOG, Norm_M2 = self.Normalize()
-        data = [Norm_C3[ind:],
-                Norm_EOG[ind:],
-                Norm_M2[ind:]]
+        data = [self.chunk_C3[ind:],
+                self.chunk_Eog[ind:],
+                self.chunk_M2[ind:]]
         return np.array(data)
 
     def dataGet_All(self):
+        # now = time.time()
+
         length = min(len(self.chunk_C3), len(self.chunk_Eog), len(self.chunk_M2))
-        Norm_C3, Norm_EOG, Norm_M2 = self.Normalize()
-        data = [Norm_C3[:length], Norm_EOG[:length], Norm_M2[:length]]
+        data = [self.chunk_C3[:length], self.chunk_Eog[:length], self.chunk_M2[:length]]
+        # print("Collect Time: %.3fms" % (float(time.time()-now) * 1000))
 
         return np.array(data)
