@@ -5,11 +5,12 @@ import time
 
 
 class DataCollector:
-    def __init__(self, C3=14, Eog=31, M2=18, fs=500, warmingTime=30):
+    def __init__(self, C3=14, Eog=31, EMG=32, M2=18, fs=500, warmingTime=30):
         # Init the fixed parameters
         self.C3 = C3
         self.Eog = Eog
         self.M2 = M2
+        self.EMG = EMG
         self.fs = fs
         self.warmingTime = int(warmingTime * 60)
 
@@ -19,14 +20,14 @@ class DataCollector:
 
         # create a new inlet to read from the stream
         self.inlet = pylsl.StreamInlet(streams[0])
-        # self.chunk_C3 = []
-        # self.chunk_Eog = []
-        # self.chunk_M2 = []
+        self.chunk_C3 = []
+        self.chunk_Eog = []
+        self.chunk_EMG = []
 
         # 30 Min sti
-        self.chunk_C3 = list(np.zeros(30 * fs * 60))
-        self.chunk_Eog = list(np.zeros(30 * fs * 60))
-        self.chunk_M2 = list(np.zeros(30 * fs * 60))
+        # self.chunk_C3 = list(np.zeros(60 * fs * 60))
+        # self.chunk_Eog = list(np.zeros(60 * fs * 60))
+        # self.chunk_M2 = list(np.zeros(60 * fs * 60))
 
         self.init_time = 0
 
@@ -39,11 +40,14 @@ class DataCollector:
             while True:
                 sample, _ = self.inlet.pull_sample()
 
-                self.chunk_C3.append(sample[self.C3] / 1e6)
-                self.chunk_Eog.append(sample[self.Eog] / 1e6)
-                self.chunk_M2.append(sample[self.M2] / 1e6)
+                temp_M2 = sample[self.M2]
+                temp_C3 = (sample[self.C3] - temp_M2) / 1e6
+                temp_Eog = (sample[self.Eog] - temp_M2) / 1e6
+                temp_EMG = (sample[self.EMG]) / 1e6
 
-                self.Buffer()
+                self.chunk_C3.append(temp_C3)
+                self.chunk_Eog.append(temp_Eog)
+                self.chunk_EMG.append(temp_EMG)
 
         threading.Thread(target=func, args=()).start()
 
@@ -51,23 +55,22 @@ class DataCollector:
         if len(self.chunk_C3) <= (self.warmingTime * self.fs):
             return
         else:
-            self.warming = True
-            del self.chunk_C3[0]
-            del self.chunk_Eog[0]
-            del self.chunk_M2[0]
+            self.chunk_C3 = self.chunk_C3[-self.warmingTime * self.fs:]
+            self.chunk_Eog = self.chunk_Eog[-self.warmingTime * self.fs:]
+            self.chunk_EMG = self.chunk_EMG[-self.warmingTime * self.fs:]
+
 
     def dataGet(self, NeedTime):
+        self.Buffer()
         ind = int(-NeedTime * self.fs)
         data = [self.chunk_C3[ind:],
                 self.chunk_Eog[ind:],
-                self.chunk_M2[ind:]]
+                self.chunk_EMG[ind:]]
+        print(len(self.chunk_C3))
         return np.array(data)
 
     def dataGet_All(self):
-        # now = time.time()
-
-        length = min(len(self.chunk_C3), len(self.chunk_Eog), len(self.chunk_M2))
-        data = [self.chunk_C3[:length], self.chunk_Eog[:length], self.chunk_M2[:length]]
-        # print("Collect Time: %.3fms" % (float(time.time()-now) * 1000))
-
+        self.Buffer()
+        length = min(len(self.chunk_C3), len(self.chunk_Eog), len(self.chunk_EMG))
+        data = [self.chunk_C3[:length], self.chunk_Eog[:length], self.chunk_EMG[:length]]
         return np.array(data)
