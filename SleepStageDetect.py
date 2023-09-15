@@ -27,23 +27,6 @@ class SleepStageModel:
 
         self.sleepDict = ["W/N1", "N2", "N3", "REM"]
 
-    # def predict(self, X):
-    #     def func(X):
-    #         X = torch.tensor(X, dtype=torch.float32).unsqueeze(dim=0).to(self.device)
-    #         with torch.no_grad():
-    #             output = self.model(X)[0]
-    #             output_ind = torch.argmax(output).item()
-    #             prob = {}
-    #             for i in range(len(self.sleepDict)):
-    #                 prob[self.sleepDict[i]] = "%.4f" % output[i].item()
-    #         return self.sleepDict[output_ind], prob
-    #
-    #     # f = threading.Thread(target=func, args=(X,))
-    #     f = ThreadWithReturnValue(target=func, args=(X,))
-    #     f.start()
-    #     a, b = f.join()
-    #     return a, b
-
     def predict(self, X):
         def func(X):
             X = torch.tensor(X, dtype=torch.float32).unsqueeze(dim=0).to(self.device)
@@ -60,3 +43,13 @@ class SleepStageModel:
         f.start()
         pred, prob = f.join()
         return pred, prob
+
+    def predict_offline(self, X):
+        X = torch.tensor(X, dtype=torch.float32).unsqueeze(dim=0).to(self.device)
+        with torch.no_grad():
+            output = self.model(X)[0]
+            output_ind = torch.argmax(output).item()
+            prob = {}
+            for i in range(len(self.sleepDict)):
+                prob[self.sleepDict[i]] = "%.4f" % output[i].item()
+        return self.sleepDict[output_ind], prob
