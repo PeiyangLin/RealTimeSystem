@@ -1,6 +1,5 @@
 import torch
 from torch import nn
-import numpy as np
 
 
 class Para_model:
@@ -86,7 +85,7 @@ class Para_model:
 
         # Flatten
 
-        self.linear = {"inchan": 208,
+        self.linear = {"inchan": 96,
                        "outchan": 4}
 
 

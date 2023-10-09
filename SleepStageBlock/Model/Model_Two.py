@@ -1,27 +1,26 @@
 import torch
 from torch import nn
-import numpy as np
 
 
 class Para_model:
 
     def __init__(self):
         fs = 500
-        self.conv_fs1 = {"inchan": 3,
+        self.conv_fs1 = {"inchan": 2,
                          "outchan": 16,
                          "kernel": int(fs / 1),
                          "stride": int(fs / 8),
                          "padding": 0,
                          "ratio": 8}
 
-        self.conv_fs2 = {"inchan": 3,
+        self.conv_fs2 = {"inchan": 2,
                          "outchan": 16,
                          "kernel": int(fs / 2),
                          "stride": int(fs / 8),
                          "padding": 0,
                          "ratio": 8}
 
-        self.conv_fs3 = {"inchan": 3,
+        self.conv_fs3 = {"inchan": 2,
                          "outchan": 16,
                          "kernel": int(fs / 4),
                          "stride": int(fs / 8),
@@ -86,7 +85,7 @@ class Para_model:
 
         # Flatten
 
-        self.linear = {"inchan": 208,
+        self.linear = {"inchan": 96,
                        "outchan": 4}
 
 
