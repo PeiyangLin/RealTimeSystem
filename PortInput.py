@@ -7,8 +7,11 @@ import glob
 
 
 class StageInput:
-    def __init__(self):
-        self.port = 0x4FF8  # LTP
+    def __init__(self, device="ANT"):
+        if device == "ANT":
+            self.port = 0x4FF8  # ANT
+        elif device == "BP":
+            self.port = 0x3FF8  # BP
         self.io = windll.LoadLibrary('./inpoutx64.dll')
         self.stage_dict = {'W/N1': 201, 'N2': 202, 'N3': 203, 'R': 204}
 
@@ -23,9 +26,11 @@ class StageInput:
 
 
 class AudioInput:
-    def __init__(self):
-        self.audioPaths = sorted(glob.glob("Audio/*"))
-        self.port = 0x4FF8  # LTP
+    def __init__(self, device="ANT"):
+        if device == "ANT":
+            self.port = 0x4FF8  # ANT
+        elif device == "BP":
+            self.port = 0x3FF8  # BP
         self.io = windll.LoadLibrary('./inpoutx64.dll')
         self.audio_dict = {"alarm.wav": 1, "apple.wav": 2, "ball.wav": 3, "book.wav": 4, "box.wav": 5,
                            "chair.wav": 6, "kiwi.wav": 7, "microphone.wav": 8, "motorcycle.wav": 9, "pepper.wav": 10,
@@ -51,3 +56,23 @@ class AudioInput:
         f = threading.Thread(target=func(), args=())
         f.start()
         f.join()
+
+
+class SlowOscillationInput:
+    def __init__(self, device="ANT"):
+        if device == "ANT":
+            self.port = 0x4FF8  # ANT
+        elif device == "BP":
+            self.port = 0x3FF8  # BP
+        self.io = windll.LoadLibrary('./inpoutx64.dll')
+        self.SO = 50
+
+    def writeSO(self, SO_state):
+        def func():
+            if SO_state == "UpState":
+                self.io.DlPortWritePortUchar(self.port, self.SO)
+                time.sleep(0.01)
+                self.io.DlPortWritePortUchar(self.port, 0)
+
+        f = threading.Thread(target=func, args=())
+        f.start()
