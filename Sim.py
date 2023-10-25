@@ -27,7 +27,7 @@ C3 = 2
 REog = 6
 EMG = 7
 
-basePath = "G:/DataSets/CIBR_data/"
+basePath = "I:/DataSets/CIBR_data/"
 database = "FL"
 index = 3
 database = basePath + database
