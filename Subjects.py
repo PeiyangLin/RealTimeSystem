@@ -9,12 +9,12 @@ class Subject:
     """
 
     def __init__(self):
-        self.name = "Test"
-        self.id = 88
-        self.gender = "Female"
-        self.age = 20
+        self.name = "ChenTianhe"
+        self.id = 30
+        self.gender = "Male"
+        self.age = 24
         self.info = {}
-        self.date = "2023_10_26"
+        self.date = "2023_11_07"
 
         self.__getDict__()
         self.logDir = "LOG/%02d-%s-%s-%s" % (self.id, self.date, self.name, self.gender)
@@ -48,7 +48,7 @@ class Subject:
             self.info["Down_duration_avg"] = down_duration_avg
             self.info["Up_duration_avg"] = up_duration_avg
             for key in self.info:
-                print(self.info[key])
+                print(key, self.info[key])
             info = pd.DataFrame(self.toDataFrame())
             info.to_csv(self.logDir + "/SubjectInfo.csv")
         else:

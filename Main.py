@@ -5,13 +5,16 @@ from Utils.PortInput import StageInput, AudioInput, SlowOscillationInput
 from Utils.SODetect import SlowOscillationDetector
 from Subjects import Subject
 
+import warnings
+
+warnings.filterwarnings("ignore")
 
 # Channel Init
-Amplifier = "ANT"  # Amplifier device
-use_channel = 2  # EEG, EOG, EMG
+Amplifier = "BP"  # Amplifier device
+use_channel = 3  # EEG, EOG, EMG
 fs = 500  # Sampling Rate
 warming = 10  # Buffer Length
-preNight_path = None
+preNight_path = "D:/sleep/084"
 
 # Staging Para
 stagingInterval = 3  # the interval of SO detect, the unit is s
@@ -43,11 +46,11 @@ if Amplifier == "ANT":
     EMG = 71  # EMG channel index in amplifier
     EMGREF = -1  # EMGREF channel index in amplifier
 elif Amplifier == "BP":
-    C3 = 4  # C3 channel ind ex in amplifier
+    C3 = 4  # C3 channel index in amplifier
     M2 = 31  # M2 channel index in amplifier
-    EOG = 57  # EOG channel index in amplifier
+    EOG = 19  # EOG channel index in amplifier
     EMG = 52  # EMG channel index in amplifier
-    EMGREF = -1  # EMGREF channel index in amplifier
+    EMGREF = 56  # EMGREF channel index in amplifier
 else:
     pass
 
@@ -119,6 +122,7 @@ try:
                 SO_enable = False
                 now_soEnable = time.time()
                 SlowPort.writeSO(SO_state, stage)
+                print(SO_state, stage)
 
             now_soDetect = time.time()
 
