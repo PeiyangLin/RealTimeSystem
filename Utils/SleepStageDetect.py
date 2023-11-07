@@ -1,9 +1,9 @@
 import threading
 
 import torch
-from SleepStageBlock.Model.Model_One import Model_total as Model_One
-from SleepStageBlock.Model.Model_Two import Model_total as Model_Two
-from SleepStageBlock.Model.Model_Three import Model_total as Model_Three
+from Utils.SleepStageBlock.Model.Model_One import Model_total as Model_One
+from Utils.SleepStageBlock.Model.Model_Two import Model_total as Model_Two
+from Utils.SleepStageBlock.Model.Model_Three import Model_total as Model_Three
 
 
 class ThreadWithReturnValue(threading.Thread):
