@@ -10378,3 +10378,129 @@ Stage: W/N1, Staging Prob: {'W/N1': '1.0000', 'N2': '0.0000', 'N3': '0.0000', 'R
 Stage: W/N1, Staging Prob: {'W/N1': '1.0000', 'N2': '0.0000', 'N3': '0.0000', 'R': '0.0000'}, StagingCount: No Counting, Staging Use Time: 5.916ms, 2023-09-27 08:15:56
 Stage: W/N1, Staging Prob: {'W/N1': '1.0000', 'N2': '0.0000', 'N3': '0.0000', 'R': '0.0000'}, StagingCount: No Counting, Staging Use Time: 5.985ms, 2023-09-27 08:15:59
 
+Name: LiJinyu
+ID: 041
+Gender: Female
+Age: 20
+Date: 2023_09_26
+Name: LiJinyu
+ID: 041
+Gender: Female
+Age: 20
+Date: 2023_09_26
+Stage: W/N1, Staging Prob: {'W/N1': '0.9978', 'N2': '0.0021', 'N3': '0.0001', 'R': '0.0001'}, StagingCount: No Counting, Staging Use Time: 52.898ms, 2023-10-24 22:53:18
+Stage: W/N1, Staging Prob: {'W/N1': '0.9450', 'N2': '0.0504', 'N3': '0.0004', 'R': '0.0042'}, StagingCount: No Counting, Staging Use Time: 7.946ms, 2023-10-24 22:53:21
+Stage: W/N1, Staging Prob: {'W/N1': '0.8694', 'N2': '0.1285', 'N3': '0.0013', 'R': '0.0008'}, StagingCount: No Counting, Staging Use Time: 6.948ms, 2023-10-24 22:53:24
+Stage: N2, Staging Prob: {'W/N1': '0.1046', 'N2': '0.8945', 'N3': '0.0005', 'R': '0.0004'}, StagingCount: N2 Count: 1, Staging Use Time: 7.951ms, 2023-10-24 22:53:27
+Stage: N2, Staging Prob: {'W/N1': '0.0822', 'N2': '0.9098', 'N3': '0.0062', 'R': '0.0018'}, StagingCount: N2 Count: 2, Staging Use Time: 7.978ms, 2023-10-24 22:53:30
+Stage: W/N1, Staging Prob: {'W/N1': '0.7689', 'N2': '0.2128', 'N3': '0.0101', 'R': '0.0082'}, StagingCount: No Counting, Staging Use Time: 7.950ms, 2023-10-24 22:53:33
+Stage: W/N1, Staging Prob: {'W/N1': '0.5453', 'N2': '0.4018', 'N3': '0.0027', 'R': '0.0502'}, StagingCount: No Counting, Staging Use Time: 7.950ms, 2023-10-24 22:53:36
+Stage: N2, Staging Prob: {'W/N1': '0.0988', 'N2': '0.8773', 'N3': '0.0063', 'R': '0.0176'}, StagingCount: N2 Count: 1, Staging Use Time: 7.950ms, 2023-10-24 22:53:39
+Stage: N2, Staging Prob: {'W/N1': '0.3360', 'N2': '0.5582', 'N3': '0.0114', 'R': '0.0945'}, StagingCount: N2 Count: 2, Staging Use Time: 7.950ms, 2023-10-24 22:53:42
+Stage: R, Staging Prob: {'W/N1': '0.1733', 'N2': '0.0451', 'N3': '0.0016', 'R': '0.7800'}, StagingCount: REM Count: 1, Staging Use Time: 8.945ms, 2023-10-24 22:53:45
+Stage: R, Staging Prob: {'W/N1': '0.0016', 'N2': '0.0021', 'N3': '0.0001', 'R': '0.9961'}, StagingCount: REM Count: 2, Staging Use Time: 8.945ms, 2023-10-24 22:53:48
+Stage: R, Staging Prob: {'W/N1': '0.1410', 'N2': '0.1521', 'N3': '0.0040', 'R': '0.7030'}, StagingCount: REM Count: 3, Staging Use Time: 8.975ms, 2023-10-24 22:53:51
+Stage: R, Staging Prob: {'W/N1': '0.1815', 'N2': '0.0310', 'N3': '0.0005', 'R': '0.7870'}, StagingCount: REM Count: 4, Staging Use Time: 8.946ms, 2023-10-24 22:53:54
+Stage: R, Staging Prob: {'W/N1': '0.3635', 'N2': '0.0242', 'N3': '0.0008', 'R': '0.6115'}, StagingCount: REM Count: 5, Staging Use Time: 9.972ms, 2023-10-24 22:53:57
+Stage: R, Staging Prob: {'W/N1': '0.1430', 'N2': '0.1705', 'N3': '0.0027', 'R': '0.6838'}, StagingCount: REM Count: 6, Staging Use Time: 9.945ms, 2023-10-24 22:54:00
+Stage: N2, Staging Prob: {'W/N1': '0.0114', 'N2': '0.8320', 'N3': '0.0012', 'R': '0.1554'}, StagingCount: N2 Count: 1, Staging Use Time: 9.973ms, 2023-10-24 22:54:03
+Stage: N2, Staging Prob: {'W/N1': '0.0705', 'N2': '0.7783', 'N3': '0.0015', 'R': '0.1496'}, StagingCount: N2 Count: 2, Staging Use Time: 9.972ms, 2023-10-24 22:54:06
+Stage: N2, Staging Prob: {'W/N1': '0.0007', 'N2': '0.9982', 'N3': '0.0002', 'R': '0.0009'}, StagingCount: N2 Count: 3, Staging Use Time: 9.973ms, 2023-10-24 22:54:09
+Stage: N2, Staging Prob: {'W/N1': '0.0018', 'N2': '0.6509', 'N3': '0.0008', 'R': '0.3465'}, StagingCount: N2 Count: 4, Staging Use Time: 10.943ms, 2023-10-24 22:54:12
+Stage: N2, Staging Prob: {'W/N1': '0.0000', 'N2': '0.9999', 'N3': '0.0000', 'R': '0.0000'}, StagingCount: N2 Count: 5, Staging Use Time: 10.941ms, 2023-10-24 22:54:15
+Stage: N2, Staging Prob: {'W/N1': '0.0058', 'N2': '0.9701', 'N3': '0.0014', 'R': '0.0227'}, StagingCount: N2 Count: 6, Staging Use Time: 10.943ms, 2023-10-24 22:54:18
+Stage: N2, Staging Prob: {'W/N1': '0.0016', 'N2': '0.9977', 'N3': '0.0003', 'R': '0.0004'}, StagingCount: N2 Count: 7, Staging Use Time: 10.944ms, 2023-10-24 22:54:21
+Stage: N2, Staging Prob: {'W/N1': '0.0001', 'N2': '0.9996', 'N3': '0.0001', 'R': '0.0002'}, StagingCount: N2 Count: 8, Staging Use Time: 12.017ms, 2023-10-24 22:54:24
+Stage: N2, Staging Prob: {'W/N1': '0.0002', 'N2': '0.9995', 'N3': '0.0002', 'R': '0.0002'}, StagingCount: N2 Count: 9, Staging Use Time: 11.967ms, 2023-10-24 22:54:27
+Stage: N2, Staging Prob: {'W/N1': '0.0136', 'N2': '0.9798', 'N3': '0.0018', 'R': '0.0048'}, StagingCount: N2 Count: 10, Staging Use Time: 10.970ms, 2023-10-24 22:54:30
+Stage: N2, Staging Prob: {'W/N1': '0.0399', 'N2': '0.9287', 'N3': '0.0035', 'R': '0.0278'}, StagingCount: N2 Count: 11, Staging Use Time: 11.941ms, 2023-10-24 22:54:33
+Stage: N2, Staging Prob: {'W/N1': '0.0352', 'N2': '0.9441', 'N3': '0.0044', 'R': '0.0163'}, StagingCount: N2 Count: 12, Staging Use Time: 10.938ms, 2023-10-24 22:54:36
+Stage: N2, Staging Prob: {'W/N1': '0.0002', 'N2': '0.9996', 'N3': '0.0001', 'R': '0.0001'}, StagingCount: N2 Count: 13, Staging Use Time: 11.967ms, 2023-10-24 22:54:39
+Stage: N2, Staging Prob: {'W/N1': '0.0030', 'N2': '0.9055', 'N3': '0.0015', 'R': '0.0900'}, StagingCount: N2 Count: 14, Staging Use Time: 11.967ms, 2023-10-24 22:54:42
+Stage: N2, Staging Prob: {'W/N1': '0.0020', 'N2': '0.9523', 'N3': '0.0020', 'R': '0.0437'}, StagingCount: N2 Count: 15, Staging Use Time: 11.967ms, 2023-10-24 22:54:45
+Stage: N2, Staging Prob: {'W/N1': '0.0065', 'N2': '0.9895', 'N3': '0.0014', 'R': '0.0026'}, StagingCount: N2 Count: 16, Staging Use Time: 11.967ms, 2023-10-24 22:54:48
+Stage: N2, Staging Prob: {'W/N1': '0.0001', 'N2': '0.9995', 'N3': '0.0001', 'R': '0.0002'}, StagingCount: N2 Count: 17, Staging Use Time: 12.965ms, 2023-10-24 22:54:51
+Stage: N2, Staging Prob: {'W/N1': '0.0021', 'N2': '0.8091', 'N3': '0.0024', 'R': '0.1863'}, StagingCount: N2 Count: 18, Staging Use Time: 12.966ms, 2023-10-24 22:54:54
+Stage: N2, Staging Prob: {'W/N1': '0.0016', 'N2': '0.9961', 'N3': '0.0011', 'R': '0.0012'}, StagingCount: N2 Count: 19, Staging Use Time: 12.965ms, 2023-10-24 22:54:57
+Stage: N2, Staging Prob: {'W/N1': '0.0003', 'N2': '0.9985', 'N3': '0.0003', 'R': '0.0009'}, StagingCount: N2 Count: 20, Staging Use Time: 13.962ms, 2023-10-24 22:55:00
+Stage: N2, Staging Prob: {'W/N1': '0.0000', 'N2': '0.9997', 'N3': '0.0001', 'R': '0.0001'}, StagingCount: N2 Count: 21, Staging Use Time: 12.936ms, 2023-10-24 22:55:03
+Stage: N2, Staging Prob: {'W/N1': '0.0006', 'N2': '0.9983', 'N3': '0.0005', 'R': '0.0006'}, StagingCount: N2 Count: 22, Staging Use Time: 13.963ms, 2023-10-24 22:55:06
+Stage: N2, Staging Prob: {'W/N1': '0.0001', 'N2': '0.9995', 'N3': '0.0001', 'R': '0.0003'}, StagingCount: N2 Count: 23, Staging Use Time: 13.963ms, 2023-10-24 22:55:09
+Stage: N2, Staging Prob: {'W/N1': '0.0002', 'N2': '0.9993', 'N3': '0.0002', 'R': '0.0003'}, StagingCount: N2 Count: 24, Staging Use Time: 13.933ms, 2023-10-24 22:55:12
+Stage: N2, Staging Prob: {'W/N1': '0.0016', 'N2': '0.9972', 'N3': '0.0007', 'R': '0.0005'}, StagingCount: N2 Count: 25, Staging Use Time: 13.962ms, 2023-10-24 22:55:15
+Stage: N2, Staging Prob: {'W/N1': '0.0000', 'N2': '0.9999', 'N3': '0.0000', 'R': '0.0001'}, StagingCount: N2 Count: 26, Staging Use Time: 13.936ms, 2023-10-24 22:55:18
+Stage: N2, Staging Prob: {'W/N1': '0.0000', 'N2': '0.9999', 'N3': '0.0000', 'R': '0.0000'}, StagingCount: N2 Count: 27, Staging Use Time: 13.962ms, 2023-10-24 22:55:21
+Stage: N2, Staging Prob: {'W/N1': '0.0001', 'N2': '0.9998', 'N3': '0.0001', 'R': '0.0000'}, StagingCount: N2 Count: 28, Staging Use Time: 14.959ms, 2023-10-24 22:55:24
+Stage: N2, Staging Prob: {'W/N1': '0.0000', 'N2': '0.9999', 'N3': '0.0001', 'R': '0.0000'}, StagingCount: N2 Count: 29, Staging Use Time: 14.961ms, 2023-10-24 22:55:27
+Stage: N2, Staging Prob: {'W/N1': '0.0003', 'N2': '0.9974', 'N3': '0.0002', 'R': '0.0020'}, StagingCount: N2 Count: 30, Staging Use Time: 15.956ms, 2023-10-24 22:55:30
+Stage: N2, Staging Prob: {'W/N1': '0.0000', 'N2': '0.9999', 'N3': '0.0000', 'R': '0.0000'}, StagingCount: N2 Count: 31, Staging Use Time: 15.957ms, 2023-10-24 22:55:33
+Stage: N2, Staging Prob: {'W/N1': '0.0000', 'N2': '0.9999', 'N3': '0.0001', 'R': '0.0000'}, StagingCount: N2 Count: 32, Staging Use Time: 15.958ms, 2023-10-24 22:55:36
+Stage: N2, Staging Prob: {'W/N1': '0.0001', 'N2': '0.9987', 'N3': '0.0002', 'R': '0.0011'}, StagingCount: N2 Count: 33, Staging Use Time: 15.930ms, 2023-10-24 22:55:39
+Stage: N2, Staging Prob: {'W/N1': '0.0000', 'N2': '0.9999', 'N3': '0.0000', 'R': '0.0000'}, StagingCount: N2 Count: 34, Staging Use Time: 15.956ms, 2023-10-24 22:55:42
+Stage: N2, Staging Prob: {'W/N1': '0.0001', 'N2': '0.9997', 'N3': '0.0001', 'R': '0.0001'}, StagingCount: N2 Count: 35, Staging Use Time: 16.927ms, 2023-10-24 22:55:45
+Stage: N2, Staging Prob: {'W/N1': '0.0000', 'N2': '0.9999', 'N3': '0.0001', 'R': '0.0000'}, StagingCount: N2 Count: 36, Staging Use Time: 16.953ms, 2023-10-24 22:55:48
+Stage: N2, Staging Prob: {'W/N1': '0.0000', 'N2': '1.0000', 'N3': '0.0000', 'R': '0.0000'}, StagingCount: N2 Count: 37, Staging Use Time: 16.954ms, 2023-10-24 22:55:51
+Stage: N2, Staging Prob: {'W/N1': '0.0000', 'N2': '0.9998', 'N3': '0.0000', 'R': '0.0001'}, StagingCount: N2 Count: 38, Staging Use Time: 17.951ms, 2023-10-24 22:55:54
+Stage: N2, Staging Prob: {'W/N1': '0.0001', 'N2': '0.9997', 'N3': '0.0002', 'R': '0.0000'}, StagingCount: N2 Count: 39, Staging Use Time: 17.952ms, 2023-10-24 22:55:57
+Stage: N2, Staging Prob: {'W/N1': '0.0001', 'N2': '0.9997', 'N3': '0.0001', 'R': '0.0002'}, StagingCount: N2 Count: 40, Staging Use Time: 16.953ms, 2023-10-24 22:56:00
+Stage: N2, Staging Prob: {'W/N1': '0.0000', 'N2': '0.9997', 'N3': '0.0001', 'R': '0.0001'}, StagingCount: N2 Count: 41, Staging Use Time: 16.925ms, 2023-10-24 22:56:03
+Stage: N2, Staging Prob: {'W/N1': '0.0001', 'N2': '0.9995', 'N3': '0.0003', 'R': '0.0002'}, StagingCount: N2 Count: 42, Staging Use Time: 17.951ms, 2023-10-24 22:56:06
+Stage: N2, Staging Prob: {'W/N1': '0.0000', 'N2': '0.9998', 'N3': '0.0000', 'R': '0.0002'}, StagingCount: N2 Count: 43, Staging Use Time: 17.951ms, 2023-10-24 22:56:09
+Stage: N2, Staging Prob: {'W/N1': '0.0000', 'N2': '0.9996', 'N3': '0.0001', 'R': '0.0002'}, StagingCount: N2 Count: 44, Staging Use Time: 18.949ms, 2023-10-24 22:56:12
+Stage: N2, Staging Prob: {'W/N1': '0.0002', 'N2': '0.9986', 'N3': '0.0004', 'R': '0.0009'}, StagingCount: N2 Count: 45, Staging Use Time: 18.949ms, 2023-10-24 22:56:15
+Stage: N2, Staging Prob: {'W/N1': '0.0004', 'N2': '0.9959', 'N3': '0.0002', 'R': '0.0036'}, StagingCount: N2 Count: 46, Staging Use Time: 17.920ms, 2023-10-24 22:56:18
+Stage: N2, Staging Prob: {'W/N1': '0.0004', 'N2': '0.9864', 'N3': '0.0004', 'R': '0.0128'}, StagingCount: N2 Count: 47, Staging Use Time: 18.949ms, 2023-10-24 22:56:21
+Stage: N2, Staging Prob: {'W/N1': '0.0045', 'N2': '0.8113', 'N3': '0.0031', 'R': '0.1811'}, StagingCount: N2 Count: 48, Staging Use Time: 18.920ms, 2023-10-24 22:56:24
+Stage: N2, Staging Prob: {'W/N1': '0.0022', 'N2': '0.9583', 'N3': '0.0009', 'R': '0.0386'}, StagingCount: N2 Count: 49, Staging Use Time: 19.918ms, 2023-10-24 22:56:27
+Stage: N2, Staging Prob: {'W/N1': '0.0008', 'N2': '0.9970', 'N3': '0.0004', 'R': '0.0018'}, StagingCount: N2 Count: 50, Staging Use Time: 19.918ms, 2023-10-24 22:56:30
+Stage: N2, Staging Prob: {'W/N1': '0.0012', 'N2': '0.9977', 'N3': '0.0007', 'R': '0.0004'}, StagingCount: N2 Count: 51, Staging Use Time: 18.915ms, 2023-10-24 22:56:33
+Stage: N2, Staging Prob: {'W/N1': '0.0008', 'N2': '0.9780', 'N3': '0.0005', 'R': '0.0207'}, StagingCount: N2 Count: 52, Staging Use Time: 20.943ms, 2023-10-24 22:56:36
+Stage: N2, Staging Prob: {'W/N1': '0.0002', 'N2': '0.9989', 'N3': '0.0003', 'R': '0.0006'}, StagingCount: N2 Count: 53, Staging Use Time: 20.943ms, 2023-10-24 22:56:39
+Stage: N2, Staging Prob: {'W/N1': '0.0008', 'N2': '0.9970', 'N3': '0.0005', 'R': '0.0016'}, StagingCount: N2 Count: 54, Staging Use Time: 19.947ms, 2023-10-24 22:56:42
+Stage: N2, Staging Prob: {'W/N1': '0.0002', 'N2': '0.9986', 'N3': '0.0003', 'R': '0.0010'}, StagingCount: N2 Count: 55, Staging Use Time: 19.947ms, 2023-10-24 22:56:45
+Stage: N2, Staging Prob: {'W/N1': '0.0000', 'N2': '0.9999', 'N3': '0.0000', 'R': '0.0000'}, StagingCount: N2 Count: 56, Staging Use Time: 21.941ms, 2023-10-24 22:56:48
+Stage: N2, Staging Prob: {'W/N1': '0.0000', 'N2': '0.9999', 'N3': '0.0000', 'R': '0.0000'}, StagingCount: N2 Count: 57, Staging Use Time: 23.936ms, 2023-10-24 22:56:51
+Stage: N2, Staging Prob: {'W/N1': '0.0000', 'N2': '0.9998', 'N3': '0.0001', 'R': '0.0000'}, StagingCount: N2 Count: 58, Staging Use Time: 20.944ms, 2023-10-24 22:56:54
+Stage: N2, Staging Prob: {'W/N1': '0.0000', 'N2': '0.9998', 'N3': '0.0001', 'R': '0.0001'}, StagingCount: N2 Count: 59, Staging Use Time: 21.937ms, 2023-10-24 22:56:57
+Stage: N2, Staging Prob: {'W/N1': '0.0000', 'N2': '0.9999', 'N3': '0.0000', 'R': '0.0000'}, StagingCount: N2 Count: 60, Staging Use Time: 21.910ms, 2023-10-24 22:57:00
+Stage: N2, Staging Prob: {'W/N1': '0.0003', 'N2': '0.9994', 'N3': '0.0001', 'R': '0.0001'}, StagingCount: N2 Count: 61, Staging Use Time: 22.938ms, 2023-10-24 22:57:03
+Stage: N2, Staging Prob: {'W/N1': '0.0001', 'N2': '0.9996', 'N3': '0.0001', 'R': '0.0002'}, StagingCount: N2 Count: 62, Staging Use Time: 20.944ms, 2023-10-24 22:57:06
+Stage: N2, Staging Prob: {'W/N1': '0.0002', 'N2': '0.9992', 'N3': '0.0003', 'R': '0.0004'}, StagingCount: N2 Count: 63, Staging Use Time: 21.941ms, 2023-10-24 22:57:09
+Stage: N2, Staging Prob: {'W/N1': '0.0000', 'N2': '1.0000', 'N3': '0.0000', 'R': '0.0000'}, StagingCount: N2 Count: 64, Staging Use Time: 21.942ms, 2023-10-24 22:57:12
+Stage: N2, Staging Prob: {'W/N1': '0.0003', 'N2': '0.9993', 'N3': '0.0003', 'R': '0.0002'}, StagingCount: N2 Count: 65, Staging Use Time: 22.938ms, 2023-10-24 22:57:15
+Stage: N2, Staging Prob: {'W/N1': '0.0000', 'N2': '1.0000', 'N3': '0.0000', 'R': '0.0000'}, StagingCount: N2 Count: 66, Staging Use Time: 23.936ms, 2023-10-24 22:57:18
+Stage: N2, Staging Prob: {'W/N1': '0.0003', 'N2': '0.9987', 'N3': '0.0004', 'R': '0.0005'}, StagingCount: N2 Count: 67, Staging Use Time: 22.911ms, 2023-10-24 22:57:21
+Stage: N2, Staging Prob: {'W/N1': '0.0002', 'N2': '0.9994', 'N3': '0.0003', 'R': '0.0002'}, StagingCount: N2 Count: 68, Staging Use Time: 22.909ms, 2023-10-24 22:57:24
+Stage: N2, Staging Prob: {'W/N1': '0.0001', 'N2': '0.9992', 'N3': '0.0002', 'R': '0.0005'}, StagingCount: N2 Count: 69, Staging Use Time: 23.936ms, 2023-10-24 22:57:27
+Stage: N2, Staging Prob: {'W/N1': '0.0000', 'N2': '0.9998', 'N3': '0.0001', 'R': '0.0001'}, StagingCount: N2 Count: 70, Staging Use Time: 23.936ms, 2023-10-24 22:57:30
+Stage: N2, Staging Prob: {'W/N1': '0.0000', 'N2': '0.9999', 'N3': '0.0000', 'R': '0.0000'}, StagingCount: N2 Count: 71, Staging Use Time: 22.911ms, 2023-10-24 22:57:33
+Stage: N2, Staging Prob: {'W/N1': '0.0002', 'N2': '0.9984', 'N3': '0.0003', 'R': '0.0010'}, StagingCount: N2 Count: 72, Staging Use Time: 24.932ms, 2023-10-24 22:57:36
+Stage: N2, Staging Prob: {'W/N1': '0.0000', 'N2': '1.0000', 'N3': '0.0000', 'R': '0.0000'}, StagingCount: N2 Count: 73, Staging Use Time: 23.937ms, 2023-10-24 22:57:39
+Stage: N2, Staging Prob: {'W/N1': '0.0000', 'N2': '1.0000', 'N3': '0.0000', 'R': '0.0000'}, StagingCount: N2 Count: 74, Staging Use Time: 23.906ms, 2023-10-24 22:57:42
+Stage: N2, Staging Prob: {'W/N1': '0.0000', 'N2': '0.9999', 'N3': '0.0000', 'R': '0.0000'}, StagingCount: N2 Count: 75, Staging Use Time: 29.889ms, 2023-10-24 22:57:45
+Stage: N2, Staging Prob: {'W/N1': '0.0000', 'N2': '1.0000', 'N3': '0.0000', 'R': '0.0000'}, StagingCount: N2 Count: 76, Staging Use Time: 25.903ms, 2023-10-24 22:57:48
+Stage: N2, Staging Prob: {'W/N1': '0.0003', 'N2': '0.9969', 'N3': '0.0004', 'R': '0.0024'}, StagingCount: N2 Count: 77, Staging Use Time: 24.933ms, 2023-10-24 22:57:51
+Stage: N2, Staging Prob: {'W/N1': '0.0005', 'N2': '0.9970', 'N3': '0.0004', 'R': '0.0021'}, StagingCount: N2 Count: 78, Staging Use Time: 23.935ms, 2023-10-24 22:57:54
+Stage: N2, Staging Prob: {'W/N1': '0.0000', 'N2': '0.9999', 'N3': '0.0001', 'R': '0.0000'}, StagingCount: N2 Count: 79, Staging Use Time: 24.933ms, 2023-10-24 22:57:57
+Stage: N2, Staging Prob: {'W/N1': '0.0000', 'N2': '1.0000', 'N3': '0.0000', 'R': '0.0000'}, StagingCount: N2 Count: 80, Staging Use Time: 24.933ms, 2023-10-24 22:58:00
+Stage: N2, Staging Prob: {'W/N1': '0.0000', 'N2': '0.9999', 'N3': '0.0000', 'R': '0.0000'}, StagingCount: N2 Count: 81, Staging Use Time: 24.905ms, 2023-10-24 22:58:03
+Stage: N2, Staging Prob: {'W/N1': '0.0000', 'N2': '0.9996', 'N3': '0.0001', 'R': '0.0002'}, StagingCount: N2 Count: 82, Staging Use Time: 23.936ms, 2023-10-24 22:58:06
+Stage: N2, Staging Prob: {'W/N1': '0.0001', 'N2': '0.9997', 'N3': '0.0001', 'R': '0.0001'}, StagingCount: N2 Count: 83, Staging Use Time: 23.906ms, 2023-10-24 22:58:09
+Stage: N2, Staging Prob: {'W/N1': '0.0000', 'N2': '0.9999', 'N3': '0.0000', 'R': '0.0000'}, StagingCount: N2 Count: 84, Staging Use Time: 29.890ms, 2023-10-24 22:58:12
+Stage: N2, Staging Prob: {'W/N1': '0.0000', 'N2': '0.9999', 'N3': '0.0000', 'R': '0.0000'}, StagingCount: N2 Count: 85, Staging Use Time: 24.908ms, 2023-10-24 22:58:15
+Stage: N2, Staging Prob: {'W/N1': '0.0000', 'N2': '0.9997', 'N3': '0.0001', 'R': '0.0002'}, StagingCount: N2 Count: 86, Staging Use Time: 29.889ms, 2023-10-24 22:58:18
+Stage: N2, Staging Prob: {'W/N1': '0.0000', 'N2': '0.9999', 'N3': '0.0000', 'R': '0.0000'}, StagingCount: N2 Count: 87, Staging Use Time: 51.863ms, 2023-10-24 22:58:21
+Stage: N2, Staging Prob: {'W/N1': '0.0000', 'N2': '0.9998', 'N3': '0.0001', 'R': '0.0000'}, StagingCount: N2 Count: 88, Staging Use Time: 25.931ms, 2023-10-24 22:58:24
+Stage: N2, Staging Prob: {'W/N1': '0.0001', 'N2': '0.9998', 'N3': '0.0001', 'R': '0.0001'}, StagingCount: N2 Count: 89, Staging Use Time: 24.932ms, 2023-10-24 22:58:27
+Stage: N2, Staging Prob: {'W/N1': '0.0001', 'N2': '0.9998', 'N3': '0.0001', 'R': '0.0001'}, StagingCount: N2 Count: 90, Staging Use Time: 24.903ms, 2023-10-24 22:58:30
+Stage: N2, Staging Prob: {'W/N1': '0.0000', 'N2': '0.9999', 'N3': '0.0001', 'R': '0.0000'}, StagingCount: N2 Count: 91, Staging Use Time: 29.921ms, 2023-10-24 22:58:33
+Stage: N2, Staging Prob: {'W/N1': '0.0002', 'N2': '0.9988', 'N3': '0.0002', 'R': '0.0008'}, StagingCount: N2 Count: 92, Staging Use Time: 29.916ms, 2023-10-24 22:58:36
+Stage: N2, Staging Prob: {'W/N1': '0.0000', 'N2': '0.9996', 'N3': '0.0001', 'R': '0.0003'}, StagingCount: N2 Count: 93, Staging Use Time: 27.925ms, 2023-10-24 22:58:39
+Stage: N2, Staging Prob: {'W/N1': '0.0001', 'N2': '0.9996', 'N3': '0.0001', 'R': '0.0003'}, StagingCount: N2 Count: 94, Staging Use Time: 24.933ms, 2023-10-24 22:58:42
+Stage: N2, Staging Prob: {'W/N1': '0.0069', 'N2': '0.9416', 'N3': '0.0025', 'R': '0.0490'}, StagingCount: N2 Count: 95, Staging Use Time: 25.929ms, 2023-10-24 22:58:45
+Stage: N2, Staging Prob: {'W/N1': '0.0005', 'N2': '0.9971', 'N3': '0.0004', 'R': '0.0019'}, StagingCount: N2 Count: 96, Staging Use Time: 33.908ms, 2023-10-24 22:58:48
+Name: LiJinyu
+ID: 041
+Gender: Female
+Age: 20
+Date: 2023_09_26
