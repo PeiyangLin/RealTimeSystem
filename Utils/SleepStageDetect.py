@@ -20,13 +20,13 @@ class SleepStageModel:
 
     def __init__(self, useChannel=3, device="cpu"):
         if useChannel == 1:
-            path = "SleepStageBlock/Model/One.pth"
+            path = "Utils/SleepStageBlock/Model/One.pth"
             self.model = Model_One()
         elif useChannel == 2:
-            path = "SleepStageBlock/Model/Two.pth"
+            path = "Utils/SleepStageBlock/Model/Two.pth"
             self.model = Model_Two()
         elif useChannel == 3:
-            path = "SleepStageBlock/Model/Three.pth"
+            path = "Utils/SleepStageBlock/Model/Three.pth"
             self.model = Model_Three()
         self.model.load_state_dict(torch.load(path, map_location=torch.device(device)))
         self.model.eval()

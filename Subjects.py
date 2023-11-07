@@ -9,8 +9,8 @@ class Subject:
     """
 
     def __init__(self):
-        self.name = "JiangXuefei"
-        self.id = 33
+        self.name = "Test"
+        self.id = 88
         self.gender = "Female"
         self.age = 20
         self.info = {}
@@ -47,12 +47,20 @@ class Subject:
             self.info["Up_max_avg"] = up_max_avg
             self.info["Down_duration_avg"] = down_duration_avg
             self.info["Up_duration_avg"] = up_duration_avg
-            info = pd.DataFrame(self.info)
+            for key in self.info:
+                print(self.info[key])
+            info = pd.DataFrame(self.toDataFrame())
             info.to_csv(self.logDir + "/SubjectInfo.csv")
         else:
             info = pd.read_csv(self.logDir + "/SubjectInfo.csv")
-            down_min_avg = info["Down_min_avg"]
-            up_max_avg = info["Up_max_avg"]
-            down_duration_avg = info["Down_duration_avg"]
-            up_duration_avg = info["Up_duration_avg"]
+            down_min_avg = info["Down_min_avg"][0]
+            up_max_avg = info["Up_max_avg"][0]
+            down_duration_avg = info["Down_duration_avg"][0]
+            up_duration_avg = info["Up_duration_avg"][0]
         return down_min_avg, up_max_avg, down_duration_avg, up_duration_avg
+
+    def toDataFrame(self):
+        frame = self.info.copy()
+        for key in frame:
+            frame[key] = [frame[key]]
+        return frame

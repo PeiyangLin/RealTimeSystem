@@ -1,13 +1,13 @@
 import time
 from Utils.DataCollector.DataCollector import DataCollector
-from Utils import SleepStageDetect
+from Code.Utils import SleepStageDetect
 from Utils.PortInput import StageInput, AudioInput, SlowOscillationInput
 from Utils.SODetect import SlowOscillationDetector
 from Subjects import Subject
 
 
 # Channel Init
-Amplifier = "BP"  # Amplifier device
+Amplifier = "ANT"  # Amplifier device
 use_channel = 2  # EEG, EOG, EMG
 fs = 500  # Sampling Rate
 warming = 10  # Buffer Length
@@ -20,11 +20,11 @@ stagingDataLength = 30  # the data length when staging, the unit is s
 # Subject Init
 subject = Subject()
 logDir = subject.get_fileName()
-logPath = logDir + "/Subject_LOG.txt"
-log = open(logPath, "a+")
 
 # SO Para Init
 neg_thresh, pos_thresh, down_duration, up_duration = subject.subjectInit(preNight_path)
+logPath = logDir + "/Subject_LOG.txt"
+log = open(logPath, "a+")
 wp = [0.5, 4]  # [low_freq_pass, high_freq_pass]
 ws = [0.01, 8]  # [low_freq_stop, high_freq_stop]
 filterOrder = 2  # the filter order
