@@ -7,7 +7,7 @@ from Subjects import Subject
 
 
 # Channel Init
-Amplifier = "ANT"  # Amplifier device
+Amplifier = "BP"  # Amplifier device
 use_channel = 2  # EEG, EOG, EMG
 fs = 500  # Sampling Rate
 warming = 10  # Buffer Length
