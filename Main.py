@@ -1,12 +1,11 @@
 import time
 from Utils.DataCollector.DataCollector import DataCollector
-from Code.Utils import SleepStageDetect
+from Utils import SleepStageDetect
 from Utils.PortInput import StageInput, AudioInput, SlowOscillationInput
 from Utils.SODetect import SlowOscillationDetector
 from Subjects import Subject
 
 import warnings
-
 warnings.filterwarnings("ignore")
 
 # Channel Init
@@ -14,7 +13,7 @@ Amplifier = "BP"  # Amplifier device
 use_channel = 3  # EEG, EOG, EMG
 fs = 500  # Sampling Rate
 warming = 10  # Buffer Length
-preNight_path = "D:/sleep/084"
+preNight_path = None
 
 # Staging Para
 stagingInterval = 3  # the interval of SO detect, the unit is s
